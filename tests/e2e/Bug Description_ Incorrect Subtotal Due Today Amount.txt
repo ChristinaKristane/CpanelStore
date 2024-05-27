@@ -1,0 +1,39 @@
+﻿Bug Description: Incorrect Subtotal Due Today Amount
+
+
+Overview: When adding products to the cart and proceeding to check the order summary on the cPanel store, 
+the subtotal due today amount is being calculated incorrectly, and the price for one of the products appears different from the initial 
+configuration stage.
+
+
+Steps to Reproduce:
+
+* Log in as a user to cPanel Store.
+* Click on "Browse products" and navigate to cPanel licenses.
+* Add a product "cPanel Solo® Cloud (1 Account)" priced at $17.49 USD Monthly to the cart on the Configure stage.
+* Click the "Continue" button and fill in the IP address.
+* Add the addon "Monthly CloudLinux for cPanel License" priced at $16.00 USD Monthly to the cart.
+* Proceed to check the order summary.
+* On the review & checkout stage, check the product/options for "cPanel Solo® Cloud (1 Account)".
+
+
+Expected Behavior:
+
+* The price displayed for "cPanel Solo® Cloud (1 Account)" on the review & checkout stage should match the price shown on the Configure stage ($17.49 USD Monthly).
+* The subtotal due today amount should accurately reflect the total cost of both products.
+
+
+Actual Behavior:
+
+* The price displayed for "cPanel Solo® Cloud (1 Account)" on the review & checkout stage shows as $33.49 USD Monthly, differing from the initial price during the Configure stage.
+* The subtotal due today amount is being calculated incorrectly.
+
+
+Additional Information:
+
+* The addon "Monthly CloudLinux for cPanel License" is priced at $16.00 USD Monthly.
+* The discrepancy in the price for "cPanel Solo® Cloud (1 Account)" may contribute to the incorrect calculation of the subtotal due today amount.
+* Impact: This bug affects the accuracy of pricing information displayed to users during the checkout process, potentially leading to confusion and dissatisfaction.
+
+
+Priority: This issue should be addressed with high priority to ensure accurate pricing and a seamless checkout experience for users.

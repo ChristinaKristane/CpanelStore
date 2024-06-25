@@ -17,7 +17,7 @@ export class HomePage {
     await this.page.goto('https://store.cpanel.net/index.php')
   }
   async page_load() {
-    expect(this.page_loaded).toBeVisible()
+    await expect(this.page_loaded).toBeVisible()
   }
   async cpanel_browse_products() {
     await this.cPanel.click()
